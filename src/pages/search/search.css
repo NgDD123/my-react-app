@@ -1,0 +1,26 @@
+/* SearchBar.css */
+.search-bar-container {
+    position: relative;
+  }
+  
+  .search-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 12PX;
+    
+  }
+  .suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+  }
+  
