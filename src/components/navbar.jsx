@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import {ShoppingCart} from "phosphor-react";
 import { AiOutlineSearch } from 'react-icons/ai';
+import { auth } from '../firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
 import  "./navbar.css";
 
 export const Navbar = () => {
+  
   return (
     <div className="navbar">
      <div className='navbar-container'>
