@@ -210,6 +210,17 @@ const Checkout = () => {
                         <button type="submit" onClick={handleCreditCardSubmit}>
                           Pay with Credit Card
                         </button>
+                        <label htmlFor="codNumber">Card Code:</label>
+                        <input
+                          type="text"
+                          id="cardCod"
+                          name="cardCod"
+                          value={creditCardDetails.cardCod}
+                          onChange={handleCreditCardChange}
+                        />
+                        <button type="submit" onClick={handleCreditCardSubmit}>
+                          Enter CardCode
+                        </button>
                     </div>
                 )}
                 <button type="submit">Place Order</button>

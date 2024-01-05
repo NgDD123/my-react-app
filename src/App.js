@@ -4,7 +4,7 @@ import './App.css';
 import { Navbar } from "./components/navbar";
 import { Home } from "./pages/home/home";
 import DeliverTo from './pages/deliver/deliverTo';
-import Service from './pages/service/service';
+import AllCategory from './pages/AllCategories/Allcategory';
 import Search from './pages/search/search';
 import Login from './pages/logIn/login';
 import { Shop } from "./pages/shop/shop";
@@ -30,7 +30,7 @@ function App() {
           <Routes>
              <Route path='/' element={<Home />} />
             <Route path='/deliver-to' element={<DeliverTo />} />
-            <Route path='/service' element={<Service/>} />
+            <Route path='/allcategory' element={<AllCategory/>} />
             <Route path='/search' element={<Search />} />
             <Route path='/login' element={<Login />} />
             <Route path='/shop' element={<Shop />} />

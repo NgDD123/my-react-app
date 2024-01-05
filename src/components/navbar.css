@@ -31,7 +31,7 @@ body, ul {
 
 /* Basic styling for the navigation bar */
 .navbar {
-  background-color: #232f3e;
+  background-color: blue;
   color: white;
   padding: 10px;
   font-family: Arial, sans-serif;
@@ -86,7 +86,7 @@ body, ul {
   background-color: white;
   display: flex;
   align-items: center;
-  border: 1px solid #ccc; /* Adding a border for better visibility */
+  border: 1px solid blue; /* Adding a border for better visibility */
   border-radius: 4px; /* Add a border-radius for a rounded appearance */
   width: 100%;
 }
@@ -95,6 +95,8 @@ body, ul {
   height: 100%; /* Change height to 100% for better alignment */
   padding: 10px;
   border: none;
+  background-color: blue;
+  color: white;
   flex: 1; /* Allow the input to take up all available space */
   margin: 10px;
   
@@ -124,14 +126,17 @@ body, ul {
   font-weight: 800;
 }
 .additional-categories {
-  background: burlywood;
+  background: #febd69;;
   display: flex;
   margin-top: 0%;
   margin-left: -100px;
 width: 112.5%;
-  font-weight: 400;
-  font-size: 20px;
+height: 50px;
+font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .additional-categories a {

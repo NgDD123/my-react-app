@@ -30,7 +30,7 @@ export const Navbar = () => {
         <div className="links">
             <Link to="/"> GBBC </Link>
             <Link to="/deliver-to">Deliver to worldwide</Link>
-            <Link to="/service">Services</Link>
+            <Link to="/Allcategory">All Categories</Link>
             <div className="searchbar">
               <input className="search-input" type="text" placeholder='Seachbar'/>
               <AiOutlineSearch className="search-icon" size={20} />
