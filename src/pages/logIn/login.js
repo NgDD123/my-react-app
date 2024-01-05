@@ -37,18 +37,20 @@ function Login() {
       <img className="login-logo" src="" alt="Logo" />
       <div className="login-container">
         <h1>Sign-In</h1>
-        <h5>Email</h5>
-        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <h5>Password</h5>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <form>
+          <h5>Email</h5>
+          <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <h5>Password</h5>
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
-        <button onClick={signIn} type="submit" className="login-signInButton">
-          Sign In
-        </button>
-        <p>By signing in, you agree to the terms and conditions for GBBC.</p>
-        <button onClick={register} className="login-registerButton">
-          Create Your Account
-        </button>
+          <button onClick={signIn} type="submit" className="login-signInButton">
+            Sign In
+          </button>
+          <p>By signing in, you agree to the terms and conditions for GBBC.</p>
+          <button onClick={register} className="login-registerButton">
+            Create Your Account
+          </button>
+        </form>
       </div>
     </div>
   );

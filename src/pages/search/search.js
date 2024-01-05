@@ -20,7 +20,7 @@ const Search = () => {
       <div className="search-input-container">
         <input
           type="text"
-          placeholder="Search Amazon"
+          placeholder="Searchbar...."
           value={query}
           onChange={handleInputChange}
         />
