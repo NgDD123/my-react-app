@@ -1,0 +1,36 @@
+/* Add this CSS to your stylesheet */
+
+.allcategories {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .category-navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;  /* Add this line to use flexbox */
+    flex-direction: column;  /* Display the items in a column */
+  }
+  
+  .category-navbar a {
+    display: block;
+    margin-top: 80%;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .category-navbar a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .allcategories:hover .category-navbar {
+    display: flex;  /* Display the navbar when the parent is hovered */
+  }
+  

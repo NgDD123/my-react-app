@@ -1,146 +1,181 @@
 .navbar {
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: sticky;
-    top: 0;  
-    z-index: 100;
-  }
-  
-  .links {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .links a{
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-weight: 700;
-  }
-  /* Reset some default styles */
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;  
+  z-index: 100;
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.links a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: 700;
+}
+/* Reset some default styles */
 body, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
 /* Basic styling for the navigation bar */
 .navbar {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+background-color: blue;
+color: white;
+padding: 10px;
+font-family: Arial, sans-serif;
 }
 
 .navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .navbar-logo {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
+color: white;
+text-decoration: none;
+font-size: 1.5rem;
 }
 
 .links {
-  display: flex;
-  gap: 20px;
+display: flex;
+gap: 20px;
 }
 
 .nav-Link {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+color: white;
+text-decoration: none;
+padding: 10px;
+border-radius: 4px;
+transition: background-color 0.3s;
 }
 
 .nav-Link:hover {
-  background-color: #1d2531;
+background-color: #1d2531;
 }
 
 /* Additional styling for specific items */
 .nav-Link-all-departments {
-  background-color: #febd69;
-  color: #111;
+background-color: #febd69;
+color: #111;
 }
 
 .nav-item-signin {
-  background-color: #febd69;
-  color: #111;
+background-color: #febd69;
+color: #111;
 }
 
 .nav-Link-cart {
-  background-color: #ff9900;
+background-color: #ff9900;
 }
 .searchbar {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  border: 1px solid blue; /* Adding a border for better visibility */
-  border-radius: 4px; /* Add a border-radius for a rounded appearance */
-  width: 100%;
+background-color: white;
+display: flex;
+align-items: center;
+border: 1px solid blue; /* Adding a border for better visibility */
+border-radius: 4px; /* Add a border-radius for a rounded appearance */
+width: 100%;
 }
 
 .search-input {
-  height: 100%; /* Change height to 100% for better alignment */
-  padding: 10px;
-  border: none;
-  background-color: blue;
-  color: white;
-  flex: 1; /* Allow the input to take up all available space */
-  margin: 10px;
-  
+height: 100%; /* Change height to 100% for better alignment */
+padding: 10px;
+border: none;
+background-color: blue;
+color: white;
+flex: 1; /* Allow the input to take up all available space */
+margin: 10px;
+width: 300px;
+
 }
 
 .search-icon {
-  padding: 10px; /* Increase padding for better visual balance */
-  height: 100%; /* Set height to 100% for better alignment */
-  background-color: #febd69;
-  border-top-right-radius: 4px; /* Adding border-radius to the right side */
-  border-bottom-right-radius: 4px; /* Adding border-radius to the right side */
-  cursor: pointer; /* Add cursor:pointer for better UX */
+padding: 10px; /* Increase padding for better visual balance */
+height: 100%; /* Set height to 100% for better alignment */
+background-color: #febd69;
+border-top-right-radius: 4px; /* Adding border-radius to the right side */
+border-bottom-right-radius: 4px; /* Adding border-radius to the right side */
+cursor: pointer; /* Add cursor:pointer for better UX */
 }
 
 .nav-options{
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: white;
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+margin-right: 10px;
+color: white;
 }
 .nov-optionOne{
-  font-size: 10px;
+font-size: 10px;
 }
 .nov-optionTwo{  
-  font-size: 13px;
-  font-weight: 800;
+font-size: 13px;
+font-weight: 800;
 }
 .additional-categories {
-  background: #febd69;;
-  display: flex;
-  margin-top: 0%;
-  margin-left: -100px;
-width: 112.5%;
+background: #febd69;
+position: absolute;
+display: flex;
+margin-top: 10%;
+margin-left: -40px;
+width: 100%;
 height: 50px;
 font-family: Arial, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  justify-content: space-between;
-  gap: 25px;
+font-weight: 600;
+font-size: 18px;
+justify-content:flex-start;
+gap: 30px;
+}
+.alladditional-categories {
+display: none; /* Hide the additional categories by default */
+flex-direction: column; /* Display links vertically */
+top: 100%; /* Position below the "All Categories" link */
+left: 0;
+background-color: #fff; /* Adjust background color as needed */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a nice effect */
+z-index: 1; /* Ensure it's above other elements */
 }
 
-.additional-categories a {
-  color: #fff;
-  margin-right: 15px;
+.alladditional-categories a {
+padding: 10px;
+text-decoration: none;
+color: #333; /* Adjust color as needed */
 }
 
+.links:hover .alladditional-categories {
+display: flex; /* Show additional categories when the parent is hovered */
+}
+.allCt{
+  padding: 15px;
+  border: 1px solid yellow;
+  background-color:white ;
+}
+
+.category-navbar {
+  display: none;
+  position: absolute;
+  background-color: #ccc;
+  margin: 20px;
+  z-index: 1;
+}
+
+.all-categories:hover .category-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+ 
+}
