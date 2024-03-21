@@ -34,7 +34,11 @@ list-style: none;
 background-color: plum;
 color: white;
 padding: 12px;
-font-family: Arial, sans-serif;
+font-family: initial;
+letter-spacing: 2px;
+font-style: initial;
+font-size: 20px;
+font-weight: 300;
 }
 
 .navbar-container {
@@ -44,13 +48,23 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+.navbar-log {
+  display: inline-block; /* Make the link behave like a block element */
+  text-decoration: none; /* Remove underline from the link */
+}
+.navbar-log h5{
+  display: flex;
+  color: white;
+  margin-right: 20px;
 
-.navbar-logo {
-color: white;
-text-decoration: none;
-font-size: 1.5rem;
 }
 
+.navbar-log img {
+  width: 30px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align the image vertically */
+  /* You can add more styles as needed */
+}
 .links {
 display: flex;
 gap: 30px;
@@ -127,57 +141,79 @@ font-size: 13px;
 font-weight: 800;
 }
 .additional-categories {
-   background: color-mix(in srgb, color percentage, color percentage);
-    position: absolute;
-    display: flex;
-    top: 80px; /* Adjust based on navbar height */
-    width: 100%;
-    height: 50px;
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    margin-left: -90px;
-    justify-content: flex-start;
-    gap: 30px;
-    padding: 0 20px; /* Add padding to adjust spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
+  background: color-mix(in srgb, color percentage, color percentage);
+  letter-spacing: 3px;
+  position: absolute;
+  display: flex;
+  top: 80px; /* Adjust based on navbar height */
+  width: 100%;
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: -90px;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 0 20px; /* Add padding to adjust spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.additional-categories a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+  font-family: initial;
+}
+
+.additional-categories a:hover {
+  color: #ff5733; /* Change link color on hover */
+}
+
 .alladditional-categories {
-display: none; /* Hide the additional categories by default */
-flex-direction: column; /* Display links vertically */
-top: 100%; /* Position below the "All Categories" link */
-left: 0;
-background-color: #fff; /* Adjust background color as needed */
-color: #ccc;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a nice effect */
-z-index: 1; /* Ensure it's above other elements */
+  display: none; /* Hide the additional categories by default */
+  flex-direction: column; /* Display links vertically */
+  top: 100%; /* Position below the "All Categories" link */
+  left: 0;
+  background-color: #fff; /* Adjust background color as needed */
+  color: #333; /* Adjust text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a nice effect */
+  z-index: 1; /* Ensure it's above other elements */
 }
 
 .alladditional-categories a {
-padding: 10px;
-text-decoration: none;
-color: white; /* Adjust color as needed */
+  padding: 10px;
+  color: #333; /* Adjust color as needed */
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.alladditional-categories a:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
 }
 
 .links:hover .alladditional-categories {
-display: flex; /* Show additional categories when the parent is hovered */
+  display: flex; /* Show additional categories when the parent is hovered */
 }
-.allCt{
+
+.allCt {
   padding: 15px;
-  background-color:plum ;
+  background-color: plum;
 }
 
 .category-navbar {
   display: none;
+  height: 10rem;
   position: absolute;
   background-color: #ccc;
-  margin: 20px;
+  margin-top: 30px;
   z-index: 1;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .all-categories:hover .category-navbar {
   display: flex;
   flex-direction: column;
   align-items: start;
- 
 }

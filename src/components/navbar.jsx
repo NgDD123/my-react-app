@@ -22,7 +22,8 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-log">
-          GBBC
+        <img src="kp TV logos.png" alt="" />
+        <h5>HOME</h5>
         </Link>
         <div className="links">
           <div className="all-categories">

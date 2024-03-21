@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <div className="login">
-      <img className="login-logo" src="" alt="Logo" />
+      <img className="login-logo" src="kp TV logos.png" alt="Logo" />
       <div className="login-container">
         <h1>Sign-In</h1>
         <form>

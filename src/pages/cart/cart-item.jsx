@@ -13,7 +13,7 @@ export const CartItem = (props) => {
         <p><b> {productSpacefication} </b></p>
         <p> ${price}</p>
         <div className="countHolder">
-          <button onClick={() => addToCart(id)}>- </button>
+          <button onClick={() => addToCart(id)}> + </button>
           <input value={cartItems [id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
           <button onClick={() => removeFromCart(id)}>- </button>
         </div>

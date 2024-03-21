@@ -38,7 +38,9 @@ const Checkout = () => {
     try {
       // Send credit card information to your server for processing
       const response = await axios.post('http://localhost:3001/checkout', { 
-      formData 
+       formData,
+       cartItems, 
+       totalAmount 
       });
       console.log('RESULT SECTION', response)
       if (!response.ok) {
@@ -63,7 +65,7 @@ const Checkout = () => {
         // Y console.log('Payment was successful. Transaction ID:', transactionId);
       }
     } catch (error) {
-      console.error(error);
+      console.error(error.response.data);
     }
   };
 
@@ -81,7 +83,7 @@ const Checkout = () => {
       const result = await response.json();
       console.log(result); // Handle the result as needed
     } catch (error) {
-      console.error(error);
+      console.error(error.response.data);
     }
   };
   const [paymentMethod, setPaymentMethod] = useState('visa');
