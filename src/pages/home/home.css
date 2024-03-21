@@ -1,31 +1,81 @@
 .section1 {
-    width: 100%;
-    height: 100vh;
-    background: url(../../assets/images/3Dimages.jpg) no-repeat center center/cover;
-}
-.section1 .container{
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-} 
+    width: 101.8%;
+    height: 60vh;
+    overflow: hidden;
+    background: linear-gradient(220deg, rgba(255, 0, 0, 0.705) 60%, #7e5d8d3f 80%), url("../../assets/images/shopping-online-on-mobile-application-online-store.jpg");
+    position: relative;
+    
+    .Wrapper {
+      max-width: 2000px;
+      height: 100%;
+      margin: auto;
+  
+      .textContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-
-.section1 .content {
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin-left: 6rem;
-}
-.section1 h1{
-    color: rgb(237, 80, 7);
-margin-right: auto;
-}
-
-@media screen and (max-width:940) {
-    .section1 .content{
-        margin-left: 1rem;
-        
+      
+  
+        h2 {
+          font-size: 35px;
+          color: wheat;
+          letter-spacing: 7px;
+          margin-top: 120px;
+          margin-left: -140px;
+          
+        }
+        h1 {
+          font-size: 40px;
+          color: white;
+          margin: 2px 0;
+          letter-spacing: 3px;
+        }
+         
+        img {
+          height: 100%;
+        }
+      }
     }
+    .buttonContainer{
+      display: flex;
+      background: transparent;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: -1000px;
 
-}
+    }
+    .buttonContainer button {
+      background-color: transparent; /* Your desired background color */
+      color: green;
+      font-size: 9px;
+      padding: 6px 8px;
+      border: 1px solid red;
+      cursor: pointer;
+      margin: 10px;
+    }
+  
+  
+    .immagContainer {
+      height: 100%;
+      position: absolute;
+      top: 140px;
+      right: 180px;
+    }
+  }
+  .section2{
+    width: 101.8%;
+    height: 400vh;
+    overflow: hidden;
+    background: linear-gradient(220deg, #6627aa52 60%, #8359b39f 80%);
+    margin: 0;
+  
+  }
+ .products {
+    background: transparent;
+  }
+  
+  .productH .product {
+    margin: 80px;
+  }

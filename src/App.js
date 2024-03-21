@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar } from "./components/navbar";
-import { Home } from "./pages/home/home";
-import DeliverTo from './pages/deliver/deliverTo';
+import Home from './pages/home/home';
 import AllCategory from './pages/AllCategories/Allcategory';
 import Search from './pages/search/search';
 import Login from './pages/logIn/login';
@@ -28,8 +27,7 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-             <Route path='/' element={<Home />} />
-            <Route path='/deliver-to' element={<DeliverTo />} />
+            <Route path='/' element={<Home />} />
             <Route path='/allcategory' element={<AllCategory/>} />
             <Route path='/search' element={<Search />} />
             <Route path='/login' element={<Login />} />

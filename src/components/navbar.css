@@ -31,9 +31,9 @@ list-style: none;
 
 /* Basic styling for the navigation bar */
 .navbar {
-background-color: blue;
+background-color: plum;
 color: white;
-padding: 10px;
+padding: 12px;
 font-family: Arial, sans-serif;
 }
 
@@ -53,7 +53,7 @@ font-size: 1.5rem;
 
 .links {
 display: flex;
-gap: 20px;
+gap: 30px;
 }
 
 .nav-Link {
@@ -71,7 +71,7 @@ background-color: #1d2531;
 /* Additional styling for specific items */
 .nav-Link-all-departments {
 background-color: #febd69;
-color: #111;
+color:#111;
 }
 
 .nav-item-signin {
@@ -95,7 +95,7 @@ width: 100%;
 height: 100%; /* Change height to 100% for better alignment */
 padding: 10px;
 border: none;
-background-color: blue;
+background-color: pink;
 color: white;
 flex: 1; /* Allow the input to take up all available space */
 margin: 10px;
@@ -127,25 +127,28 @@ font-size: 13px;
 font-weight: 800;
 }
 .additional-categories {
-background: #febd69;
-position: absolute;
-display: flex;
-margin-top: 10%;
-margin-left: -40px;
-width: 100%;
-height: 50px;
-font-family: Arial, sans-serif;
-font-weight: 600;
-font-size: 18px;
-justify-content:flex-start;
-gap: 30px;
-}
+   background: color-mix(in srgb, color percentage, color percentage);
+    position: absolute;
+    display: flex;
+    top: 80px; /* Adjust based on navbar height */
+    width: 100%;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: -90px;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0 20px; /* Add padding to adjust spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
 .alladditional-categories {
 display: none; /* Hide the additional categories by default */
 flex-direction: column; /* Display links vertically */
 top: 100%; /* Position below the "All Categories" link */
 left: 0;
 background-color: #fff; /* Adjust background color as needed */
+color: #ccc;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a nice effect */
 z-index: 1; /* Ensure it's above other elements */
 }
@@ -153,7 +156,7 @@ z-index: 1; /* Ensure it's above other elements */
 .alladditional-categories a {
 padding: 10px;
 text-decoration: none;
-color: #333; /* Adjust color as needed */
+color: white; /* Adjust color as needed */
 }
 
 .links:hover .alladditional-categories {
@@ -161,8 +164,7 @@ display: flex; /* Show additional categories when the parent is hovered */
 }
 .allCt{
   padding: 15px;
-  border: 1px solid yellow;
-  background-color:white ;
+  background-color:plum ;
 }
 
 .category-navbar {

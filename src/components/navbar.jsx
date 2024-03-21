@@ -18,7 +18,6 @@ export const Navbar = () => {
       signOut(auth);
     }
   };
-
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -26,8 +25,6 @@ export const Navbar = () => {
           GBBC
         </Link>
         <div className="links">
-          <Link to="/">GBBC</Link>
-          <Link to="/deliver-to">Deliver to worldwide</Link>
           <div className="all-categories">
             <Link to="/Allcategory" className='allCt'>All Categories</Link>
             <div className="category-navbar">
@@ -44,14 +41,6 @@ export const Navbar = () => {
             <input className="search-input" type="text" placeholder="Searchbar" />
             <AiOutlineSearch className="search-icon" size={20} />
           </div>
-          <div className="navbar-options">
-            <Link to={!user && '/login'}>
-              <div onClick={handleAuthentication} className="nav-options">
-                <span className="nov-optionOne">Hello{!user ? ' Customer' : user.email}</span>
-                <span className="nov-optionTwo">{user ? ' Sign Out' : ' Sign In'}</span>
-              </div>
-            </Link>
-          </div>
           <Link to="/shop">Shop</Link>
           <Link to="/contact">Contact</Link>
           <div className="navbar-option">
@@ -63,6 +52,14 @@ export const Navbar = () => {
           <Link to="/cart">
             <ShoppingCart size={32} />
           </Link>
+          <div className="navbar-options">
+            <Link to={!user && '/login'}>
+              <div onClick={handleAuthentication} className="nav-options">
+                <span className="nov-optionOne">Hello{!user ? ' Customer' : user.email}</span>
+                <span className="nov-optionTwo">{user ? ' Sign Out' : ' Sign In'}</span>
+              </div>
+            </Link>
+          </div>
         </div>
         <div className="additional-categories">
           <Link to="/electronics">Electronics</Link>
